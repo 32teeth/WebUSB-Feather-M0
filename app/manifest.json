@@ -1,0 +1,21 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "name": "feather serial",
+  "short_name":"feather serial",
+  "description": "feather serial configurator application",
+  "version": "0.0.1",
+  "version_name": "0.0.1",
+  "manifest_version": 2,
+  "minimum_chrome_version": "40",
+  "permissions": [
+    "serial",
+    "<all_urls>"
+  ],
+  "app": {
+    "background": {
+      "scripts": [
+        "js/index.js"
+      ]
+    }
+  }
+}
