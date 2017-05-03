@@ -128,16 +128,17 @@ const connection = (function() {
     if(port.id)
     {
       time();
-      /*
+      ///*
       feed.get().then(
         response => {
-          log(`feed: ${JSON.stringify(JSON.parse(response).data)}`);
+          //log(`feed: ${JSON.stringify(JSON.parse(response).data)}`);
+          send(`show btc ${parseFloat(JSON.parse(response).data[0].high).toFixed(2)}`);
         },
         error => {
           log(`error: ${JSON.stringify(error)}`);
         }
       )
-      */
+      //*/
     }
     else
     {
